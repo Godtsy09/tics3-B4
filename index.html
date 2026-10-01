@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Armería de Hyrule · Actividad #3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Estandarte real con tecnología Sheikah -->
+  <header class="estandarte">
+    <svg class="ojo" viewBox="0 0 100 100" aria-hidden="true">
+      <path d="M6 50Q50 8 94 50Q50 92 6 50Z" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/>
+      <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" stroke-width="5"/>
+      <circle cx="50" cy="50" r="5" fill="currentColor"/>
+      <path d="M33 22Q50 8 67 22M50 68V95" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+    </svg>
+    <div>
+      <h1>Armería de Hyrule</h1>
+      <p>Equipo de caballero y tecnología Sheikah, cargado con <code>fetch()</code></p>
+    </div>
+    <button id="recargar" type="button">Escanear con la Pizarra</button>
+  </header>
+
+  <main>
+    <!-- Mensajes de estado: cargando, éxito o error -->
+    <p id="estado" role="status">Escaneando la armería...</p>
+
+    <!-- Aquí JavaScript inserta las tarjetas de artículos -->
+    <section id="productos" class="rejilla"></section>
+  </main>
+
+  <footer>Actividad #3 · B4 · Catálogo de la Armería de Hyrule</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
